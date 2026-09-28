@@ -4,8 +4,18 @@ from app.models.tasks import Task
 router = APIRouter(prefix="/tasks",tags=["tasks"])
 
 tasks = [
-    {"id": 1, "title": "Learn FastAPI", "completed": False},
-    {"id": 2, "title": "Learn Git releases", "completed": False},
+    {
+        "id": 1,
+        "title": "Learn FastAPI",
+        "completed": False,
+        "priority": "high",
+    },
+    {
+        "id": 2,
+        "title": "Learn Git releases",
+        "completed": False,
+        "priority": "medium",
+    },
 ]
 
 async def get_task_list():
