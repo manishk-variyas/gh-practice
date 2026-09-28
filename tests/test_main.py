@@ -33,7 +33,7 @@ def test_tasks_check() -> None:
     assert len(data) == 2
 
     assert data[0]["id"] == 1
-
     assert data[0]["title"] == "Learn FastAPI"
-
     assert data[0]["completed"] is False
+    assert data[0]["priority"] == "high"
+    assert data[1]["priority"] == "medium"
